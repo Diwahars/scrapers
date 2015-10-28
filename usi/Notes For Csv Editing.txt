@@ -1,0 +1,1 @@
+- Replace all ";" with "," for all Variants in the Product Names column

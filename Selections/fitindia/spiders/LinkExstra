@@ -1,0 +1,36 @@
+from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.selector import HtmlXPathSelector
+from scrapy.spider import BaseSpider
+from fitindia.items import CraigslistSampleItem
+import urlparse 
+from scrapy.http.request import Request
+
+class MySpider(BaseSpider):
+    name = "lnk"
+    allowed_domains = ["scssports.in"]
+    start_urls = ["http://scssports.in/index.php?route=product/category&path=60"]
+    
+  def parse_item(self,response):
+    hxs = HtmlXPathSelector(response)
+    titles = hxs.select("//div[@class='view-content']/div[@class='image']/a[1]/@href"))
+    , callback="parse_item", follow= True),)")
+    items = []
+    for titles in titles:
+      item = CraigslistSampleItem()
+      item ["productname"] = titles.select("//div[@class='view-content']/div[@class='image']/a[1]/@href"))
+    , callback="parse_item", follow= True),)").extract()
+      item ["imgurl1"] = titles.select("//div[@class='product-info']/div[@class='left']/div[@class='image']/a/@href").extract()
+      item ["imgurl2"] = titles.select("//div[@class='image-additional caruofredsel-additional']/a[1]/@href").extract()
+      item ["imgurl3"] = titles.select("//div[@class='image-additional caruofredsel-additional']/a[2]/@href").extract()
+      item ["MRP"] = titles.select("//div[@class='right']/div[@class='price']/span[@class='price-old']/text()").extract()
+      item ["SP"] = titles.select("//div[@class='right']/div[@class='price']/span[@class='price-new']/text()").extract()
+      item ["stock"] = ittles.select("//div[@class='description']/text()[last()]").extract()
+      item ["description"] = titles.select("//div[@class='tab-content']/p/text()").extract()
+           
+      items.append(item)
+      return(items)
+      
+            
+
+        

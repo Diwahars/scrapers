@@ -1,0 +1,25 @@
+productcode,imageurl,productname,description,size
+BB-241,basketball/pro-touch.png, Pro Touch,,
+BB-240,basketball/pro-touch-performance.png, Pro Touch,,
+"BB-632, 631, 630","basketball/europa-blue.png,basketball/europa-blue-sub.png",,,
+"BB-180, 181, 179",basketball/multi-color2.png,,,
+"BB-634, 635, 633","basketball/europa.png,basketball/europa_sub.png",,,
+"BB-196, 182, 197",basketball/regular.png,,,
+productcode,imageurl,productname,description,size
+BB-241,basketball/pro-touch.png, Pro Touch," ,Official Match Ball of Nation Games,2011 Ranchi,Size: - 7, ",
+"BB-632, 631, 630","basketball/europa-blue.png,basketball/europa-blue-sub.png",,,
+"BB-196, 182, 197",basketball/regular.png,,,
+BB-240,basketball/pro-touch-performance.png, Pro Touch,,
+"BB-634, 635, 633","basketball/europa.png,basketball/europa_sub.png",,,
+"BB-180, 181, 179",basketball/multi-color2.png,,,
+productcode,description,description1,imageurl,size,productname
+"BB-634, 635, 633","It is designed for recreational play, features a high performance natural rubber cover. It helps build better technique and form for shooting, passing, dribbling and rebounding.,
+          ,
+          Size(s) - 7,6,5, ",,"basketball/europa.png,basketball/europa_sub.png",,"<td class=""prod-name""><strong>Europa</strong></td>"
+"BB-632, 631, 630","It is designed for recreational play, features a high performance natural rubber cover. It helps build better technique and form for shooting, passing, dribbling and rebounding.,
+          ,
+          Size(s) - 3,2,1, ",,"basketball/europa-blue.png,basketball/europa-blue-sub.png",,"<td class=""prod-name""><strong>Europa</strong></td>"
+"BB-180, 181, 179"," ,Size(s) -7, 6, 5, , ",,basketball/multi-color2.png,,"<td class=""prod-name""><strong>Spectra</strong></td>"
+"BB-196, 182, 197"," ,Size(s) -7, 6, 5, , ",,basketball/regular.png,,"<td class=""prod-name""><strong>Regular</strong></td>"
+BB-240," ,Size: - 6, ",,basketball/pro-touch-performance.png,,"<td class=""prod-name""> Pro Touch</td>"
+BB-241,," ,Official Match Ball of Nation Games,2011 Ranchi,Size: - 7, ",basketball/pro-touch.png,,"<td class=""prod-name""> Pro Touch</td>"

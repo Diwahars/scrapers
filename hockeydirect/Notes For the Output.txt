@@ -1,0 +1,16 @@
+- Multiply prices by 97*123/100 for markup and conversion to rupees and add delivery costs
+Delivery Cost
+- Add INR 3700 for shipping on sticks
+
+- Add INR 2000 for shipping on shoes
+
+- Replace ";" with "," in all Product Names for all variants.
+for eg: "[S]Size = 36;[S]Weight = Light" should become "[S]Size = 25,[S]Weight = Light"
+
+
+
+- Combie two columns
+
+- Remove all Asics Running Shoes in the list.
+
+- Separate imgurls

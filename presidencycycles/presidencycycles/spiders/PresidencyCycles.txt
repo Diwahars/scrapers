@@ -1,0 +1,42 @@
+from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.contrib.loader import ItemLoader
+from scrapy.http import Request
+from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.selector import HtmlXPathSelector
+from scrapy.selector import Selector
+from scrapy.spider import BaseSpider
+from holabirdsports.items import BigCItem
+import urlparse,re,json,csv
+output = open("HolabirdSports.csv","wb")
+header = ('Item Type','Product ID','Product Name','Brand Name','Price','Retail Price','Sale Price','Product Description','Product Code/SKU','Bin Picking Number','Category',
+                 'Option Set','Product Availability','Current Stock Level','Free Shipping','Sort Order','Meta Description','Page Title',''
+             'Product Image Description - 1','Product Image Is Thumbnail - 1',''
+             'Track Inventory','Product Image Sort - 1','Product Image Sort - 2','Product Image Sort - 3','Product Image Sort - 4','Product Image Sort-5','Product Image Sort-6','Product Image Sort-7','Product Image Sort-8',
+             'Product Image File - 1','Product Image File - 2','Product Image File - 3','Product Image File - 4','Product Image File - 5 ',
+    'Product Image File - 6','Product Image File - 7','Product Image File - 8')
+mywriter = csv.writer(output)
+mywriter.writerow(header)
+
+class HolabirdSpider(CrawlSpider):
+	name = "holabirdsports"
+	allowed_domains = ["holabirdsports.com"]
+	start_urls = [   
+					"http://www.holabirdsports.com/shoes/women-s/indoor-squash-racquetball.html",
+					"http://www.holabirdsports.com/shoes/men-s/indoor-squash-racquetball.html",
+					"http://www.holabirdsports.com/shoes/women-s/tennis.html",
+					"http://www.holabirdsports.com/shoes/junior-s/tennis.html",
+					"http://www.holabirdsports.com/shoes/men-s/tennis.html"    
+					"http://www.holabirdsports.com/tennis/accessories/overgrips.html",
+					"http://www.holabirdsports.com/tennis/accessories/replacement-grips.html",
+					"http://www.holabirdsports.com/tennis/accessories/tape.html",
+					"http://www.holabirdsports.com/tennis/accessories/grip-enhancement.html",
+					"http://www.holabirdsports.com/tennis/clothing/socks.html",
+					"http://www.holabirdsports.com/tennis/clothing/sweatbands.html",
+					"http://www.holabirdsports.com/tennis/strings-stringing/string.html",
+					"http://www.holabirdsports.com/tennis/strings-stringing/stencils-ink.html",
+					"http://www.holabirdsports.com/tennis/strings-stringing/grommets-bumper-guards-2.html",
+					"http://www.holabirdsports.com/tennis/strings-stringing/string-savers.html",
+    ]
+	rules = (Rule (SgmlLinkExtractor(allow=(),restrict_xpaths=("//div[@class='pages']",)), callback="parse_category" , follow= True),)
+
+	def parse_category(self, response):

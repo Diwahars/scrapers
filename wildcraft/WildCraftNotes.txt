@@ -1,0 +1,8 @@
+Take SKUS from IMGURL after separating columns with /
+
+Replace thumbnails with large
+Remove HTML Code <*>
+
+Remove "Select" from size and color
+
+Find SKU from IMGURL

@@ -1,0 +1,9 @@
+1) Run Scrawler with 30 items view
+
+2) Remove HTML Tags
+
+3) Remove , and spaces from Description
+
+4) Add Mrp + Mrp1
+
+5) Combine Description 1 and 2

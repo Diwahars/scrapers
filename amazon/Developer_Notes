@@ -1,0 +1,51 @@
+http://www.amazon.com/gp/twister/ajaxv2?ptd=SHOES&json=1&dpxAjaxFlag=1&sCac=1&isUDPFlag=1&twisterView=glance&ee=2&pgid=shoes_display_on_website&sr=1-1&parentAsin=B00IEVU4WQ&enPre=1&dStr=size_name%2Ccolor_name&auiAjax=1&storeID=shoes&psc=1&isFlushing=2&dpEnvironment=softlines&mType=full&asinList=B00PY08RG0&id=B00PY08RG0
+
+
+Correct:
+http://www.amazon.com/gp/twister/ajaxv2?ptd=SHOES
+json=1
+dpxAjaxFlag=1
+sCac=1
+isUDPFlag=1
+twisterView=glance
+ee=2
+pgid=shoes_display_on_website
+sr=1-1
+parentAsin=B00IEVU4WQ
+enPre=1
+isP=1
+qid=1442306231
+dStr=size_name%2Ccolor_name
+auiAjax=1
+storeID=apparel
+psc=1
+isFlushing=2
+dpEnvironment=softlines
+mType=full
+asinList=B00IEVV8S0
+id=B00IEVV8S0
+
+http://www.amazon.com/gp/twister/ajaxv2?ptd=SHOES&json=1&dpxAjaxFlag=1&sCac=1&isUDPFlag=1&twisterView=glance&ee=2&pgid=shoes_display_on_website&sr=1-1&parentAsin=B00IEVU4WQ&enPre=1&dStr=size_name%2Ccolor_name&auiAjax=1&storeID=apparel&psc=1&asinList=B00IEVVG1Y&isFlushing=2&dpEnvironment=softlines&id=B00IEVVG1Y&mType=full
+
+
+remove:
+nodeid
+rid
+
+price_url = sel.xpath("//script[contains(text(),'immutableURL')]/text()").extract()[0].split('immutableURLPrefix":"')[-1].split('"')[0]
+			price_url = 'http://www.amazon.com' + price_url + '&psc=1&isFlushing=2&dpEnvironment=softlines&mType=full'
+			
+# url = price_url + '&asinList=%s&id=%s' %(asin,asin)
+				# print url				
+				# price_response = requests.request('GET', url)
+				# print price_response.text.split('primenote_feature_div')[0].split('a-size-medium a-color-price')[-1].split('<\/span')[0].split('$')[-1]
+
+def parse_price(self, response):
+			print response.text
+			# sel = Selector(response)
+			# print response.text
+			# price_dict = response.meta['item']
+			# print response.body.decode(response.encoding)
+			# # price = response.xpath("//span[@id='priceblock_ourprice']/text()").extract()[0].replace('$','')
+			# # print price 
+			# return price_dict

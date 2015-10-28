@@ -1,0 +1,21 @@
+http://www.vibramfivefingersbarefootshoes.ca/Returns-Refund
+
+http://www.sportsshoes.com/product/asi3132/asics-gel~noosa-tri-9-running-shoes/
+
+http://www.runnersneed.com/asics-mens-gel-noosa-tri-9//running-specialists/fcp-product/7246
+
+http://www.chainreactioncycles.com/in/en/asics-gel-noosa-tri-9-shoes-ss14/rp-prod115358
+
+http://www.milletsports.co.uk/running/shoes/mens/asics-gel-noosa-tri-9-mens-running-shoe/
+
+http://www.21run.com/ru_de/shop.html?brand=9751
+
+http://www.tennisnuts.com/shop/squash/squash-shoes/adidas-badminton-squash-indoor-shoes/adidas-squash-shoes.html
+
+http://www.dickssportinggoods.com/product/index.jsp?productId=30834746
+
+http://www.zappos.com/adidas-adipower-stabil-10-1
+
+  rules = (Rule (SgmlLinkExtractor(allow=(),restrict_xpaths=('//div[@class="fr w35"]',))
+                 , callback="parse_items", follow= True),)
+

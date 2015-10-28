@@ -1,0 +1,5 @@
+1) Format SKU Column
+
+2) Remove duplicte Image URLS 
+
+3) Remove HTML Tags from desc

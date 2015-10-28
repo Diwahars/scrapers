@@ -1,0 +1,11 @@
+Remove HTML from description
+
+2) replace thumbnail/56x with images
+
+3) separate img urls
+
+4) seperate brand name
+
+5) Remove -- Please Select --, 
+
+6) Replace , with ; in variant 

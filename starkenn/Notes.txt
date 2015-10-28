@@ -1,0 +1,15 @@
+1)Add Descp1+ Descp2
+
+2)Remove HTML from Specifications
+
+3)Remove ctl00_ContentPlaceHolder1_TabContainer1_TabPanel4_dgGeometry_ctl03_lb and HTML from FrameGeometey
+
+4)Replace Admin with http://www.starkennbikes.com/Admin
+4)Split columns in imgurl2 with ,
+
+5)Remove --select--, and --select-- from sizes
+6)Replace , with ;
+
+
+jin kyai maja no 39A Kebayoran Beru
+JAkarta 12120
